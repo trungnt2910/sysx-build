@@ -15,4 +15,4 @@ clean:
 	rm sysx.iso
 
 emulate: sysx.iso
-	qemu-system-i386 -cdrom sysx.iso
+	qemu-system-i386 -cdrom sysx.iso -serial stdio
