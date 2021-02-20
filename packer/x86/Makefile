@@ -7,7 +7,7 @@ sysx.iso: ../../kernel/kernel.elf
 	cp ../../kernel/kernel.elf tmp/kernel.elf
 	cp stage2_eltorito tmp/boot/grub/stage2_eltorito
 	cp menu.lst tmp/boot/grub/menu.lst
-	mkisofs -R -b boot/grub/stage2_eltorito -no-emul-boot -boot-load-size 4 -boot-info-table -o sysx.iso tmp
+	genisoimage -R -b boot/grub/stage2_eltorito -no-emul-boot -boot-load-size 4 -boot-info-table -o sysx.iso tmp
 	rm -rf tmp
 
 clean:
