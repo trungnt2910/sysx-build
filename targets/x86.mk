@@ -20,7 +20,7 @@ LD=$(HOST)-ld
 ASNG=nasm
 
 # build flags
-CFLAGS=-O2 -g -ffreestanding -Wall -Wextra -DDEBUG -DTERM_SER
+CFLAGS=-O2 -g -ffreestanding -Wall -Wextra -DDEBUG -DTERM_VGATEXT -DTERM_NO_INPUT
 LDFLAGS=-nostdlib -lgcc
 ASFLAGS=
 ASNGFLAGS=-f elf -g
