@@ -2,3 +2,4 @@ default 0
 
 title SysX
 kernel /kernel.elf
+module /initrd.tar
