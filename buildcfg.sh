@@ -11,4 +11,4 @@ fi
 TARGET=$(cat target.mk | grep "TARGET=" | sed -e "s/^TARGET=//" -e "s/\n$//")
 WD=$(pwd)
 
-PROJECTS="kernel packer/$TARGET"
+PROJECTS="kernel initrd packer/$TARGET"
