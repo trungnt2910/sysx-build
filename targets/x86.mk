@@ -15,6 +15,7 @@ HOST=i686-elf
 CC=$(HOST)-gcc
 AS=$(HOST)-as
 LD=$(HOST)-ld
+OC=$(HOST)-objcopy
 
 # non-GCC assembler
 ASNG=nasm
