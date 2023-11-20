@@ -11,7 +11,9 @@ ARCHDIR_FAMILY=
 ARCHDIR_ARCH=arch/x86cpu
 
 # GCC toolchain
+ifndef HOST
 HOST=i686-elf
+endif
 CC=$(HOST)-gcc
 AS=$(HOST)-as
 LD=$(HOST)-ld
