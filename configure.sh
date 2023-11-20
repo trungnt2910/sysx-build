@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -e
+
 if [[ -z $1 ]]; then
   echo "Usage: ./configure.sh <target>"
   exit 0

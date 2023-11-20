@@ -2,6 +2,8 @@
 
 # NOT TO BE CONFUSED WITH configure.sh! This is only supposed to be called by build.sh and clean.sh.
 
+set -e
+
 if [[ "$(uname)" == "Darwin" ]]; then
   CORES=$(sysctl -n hw.ncpu)
 else

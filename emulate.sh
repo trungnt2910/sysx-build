@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -e
+
 . ./buildcfg.sh
 
 ./build.sh
